@@ -1,0 +1,6 @@
+This is for Common Lisp bindings to Intel MKL library other than BLAS
+and LAPACK (already defined in BLAS-LAPACK-FFI).
+
+Further cleanups will merge the two packages and make blas-lapack-ffi
+independent to Intel's MKL.
+
