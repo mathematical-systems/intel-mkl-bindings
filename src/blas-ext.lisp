@@ -1,0 +1,51 @@
+(in-package :mkl.blas-ext)
+
+(defffun mkl-dimatcopy :void
+  (ordering :string)
+  (trans :string)
+  (rows blas-int)
+  (cols blas-int)
+  (alpha :double)
+  (a (:array :double * *) :in-out)
+  (src-lda blas-int)
+  (dst-lda blas-int))
+
+(defffun mkl-domatcopy :void
+  (ordering :string)
+  (trans :string)
+  (rows blas-int)
+  (cols blas-int)
+  (alpha :double)
+  (src (:array :double * *))
+  (src-ld blas-int)
+  (dst (:array :double * *) :in-out)
+  (dst-ld blas-int))
+
+(defffun mkl-domatcopy2 :void
+  (ordering :string)
+  (trans :string)
+  (rows blas-int)
+  (cols blas-int)
+  (alpha :double)
+  (src (:array :double * *))
+  (src-row blas-int)
+  (src-col blas-int)
+  (dst (:array :double * *) :in-out)
+  (dst-row blas-int)
+  (dst-col blas-int))
+
+(defffun mkl-domatadd :void
+  (ordering :string)
+  (transa :string)
+  (transb :string)
+  (m blas-int)
+  (n blas-int)
+  (alpha :double)
+  (a (:array :double * *))
+  (lda blas-int)
+  (beta :double)
+  (b (:array :double * *))
+  (ldb blas-int)
+  (c (:array :double * *) :in-out)
+  (ldc blas-int))
+
