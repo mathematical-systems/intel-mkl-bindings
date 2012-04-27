@@ -4,3 +4,4 @@ and LAPACK (already defined in BLAS-LAPACK-FFI).
 Further cleanups will merge the two packages and make blas-lapack-ffi
 independent to Intel's MKL.
 
+Contact: jianshi.huang@gmail.com
